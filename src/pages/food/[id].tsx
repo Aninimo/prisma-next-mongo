@@ -83,39 +83,17 @@ export default function Food(props){
             className='items-center w-1/2 p-4 bg-gray-200 ml-64 mt-12'
           >
             <form ref={formRef}>
-              <div
-                className='flex flex-col mb-8'
-              >
-
-              <label>
-
-                Name
-
-              </label>
-
-              <input
-
-                className='border'
-
-                defaultValue={food?.name}
-
-                      name='editFoodName'
-
-              />
-
-            </div>
-
-            <div
-
-              className='flex flex-col mb-8'
-
-            >
-
-              <label>
-
-                Price
-
-              </label>
+              <div className='flex flex-col mb-8'>
+                <label>Name</label>
+                <input
+                  className='border'
+                  defaultValue={food?.name}
+                  name='editFoodName'
+                />
+              </div>
+              
+             <div className='flex flex-col mb-8'>
+              <label>Price</label>
 
               <input
 
@@ -249,15 +227,7 @@ export default function Food(props){
 
       <p>price(💵) {food?.price}</p>
 
-        <h1
-
-          className='mt-4'
-
-        >
-
-          Ingredients
-
-        </h1>
+        <h1 className='mt-4'>Ingredients</h1>
 
         <div className='w-52 h-1 bg-black'/>
 
@@ -279,18 +249,10 @@ export default function Food(props){
 
         <div className='w-52 h-1 bg-black'/>
 
-        <p>
-
-          {food?.description}
-
-        </p>
-
+        <p>{food?.description}</p>
       </div>
-
     </main>
-
   )
-
 }
 
 export async function getServerSideProps(context) {
