@@ -52,15 +52,13 @@ export default function Home(props){
   return(
     <main>
       <div
-        className='flex justify-between items-center p-4 bg-orange-400 text-white'
-      >
+        className='flex justify-between items-center p-4 bg-orange-400 text-white'>
         <h1 className='text-3xl font-bold'>
           Recipes 🥘🍲🥗🥙
         </h1>
         <button
           onClick={openModal}
-          className='p-3 px-12 bg-blue-600 rounded text-white'
-        >
+          className='p-3 px-12 bg-blue-600 rounded text-white'>
           Add Food
         </button>
       </div>
@@ -73,57 +71,25 @@ export default function Home(props){
         <form ref={formRef}>
           <div className='flex flex-col'>
             <label>Name</label>
-
             <input
-
               name='addFoodName'
-
               className='w-52 border rounded'
-
             />
-
           </div>
-
           <div
-
-            className='flex flex-col mt-4'
-
-          >
-
-            <label>
-
-              Price
-
-            </label>
-
+            className='flex flex-col mt-4'>
+            <label>Price</label>
             <input
-
               name='addFoodPrice'
-
               className='w-52 border rounded'
-
             />
-
           </div>
-
           <div
-
-            className='flex flex-col mt-4'
-
-          >
-
-            <label>
-
-              Active
-
-            </label>
-
+            className='flex flex-col mt-4'>
+            <label>Active</label>
             <input
-
               name='addFoodActive'
-
               className='w-52 border rounded'
-
             />
 
           </div>
@@ -133,25 +99,14 @@ export default function Home(props){
             className='flex flex-col mt-4'
 
           >
-
            <label>ImageUrl</label>
-
            <input name='addFoodImageUrl'/>
-
          </div>
-
           <div
-
-            className='flex flex-col mt-4'
-
-          >
-
+            className='flex flex-col mt-4'>
             <label>
-
               Ingredients
-
             </label>
-
             <textarea
 
               name='addFoodIngredients'
@@ -159,9 +114,7 @@ export default function Home(props){
                   type='text'
 
                 ></textarea>
-
           </div>
-
           <div className='flex flex-col mt-4'>
             <label>Description</label>
            <textarea
