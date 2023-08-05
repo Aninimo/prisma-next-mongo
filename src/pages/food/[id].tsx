@@ -96,26 +96,13 @@ export default function Food(props){
               <label>Price</label>
 
               <input
-
                 defaultValue={food?.price}
-
                 name='editFoodPrice'
-
               />
-
             </div>
-
             <div
-
-              className='flex flex-col mb-8'
-
-            >
-
-              <label>
-
-                Active
-
-              </label>
+              className='flex flex-col mb-8'>
+              <label>Active</label>
 
               <input
 
@@ -140,20 +127,11 @@ export default function Food(props){
               </label>
 
               <input
-
                   defaultValue={food?.imageUrl}
-
                   name='editFoodImageUrl'
-
               />
-
             </div>
-
-            <div
-
-              className='flex flex-col mb-8'
-
-            >
+            <div className='flex flex-col mb-8'>
 
               <label>
 
@@ -196,15 +174,9 @@ export default function Food(props){
           </form>
 
           <button
-
             onClick={() => editFood()}
-
-            className='p-3 px-12 bg-blue-500 text-white rounded mt-8'
-
-          >
-
-            Edit
-
+            className='p-3 px-12 bg-blue-500 text-white rounded mt-8'>
+              Edit
           </button>
 
         </Modal>
